@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=aplicacao
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/aplicacao
+CND_ARTIFACT_NAME_Debug=dissertacao
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/dissertacao
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=aplicacao.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/aplicacao.tar
+CND_PACKAGE_NAME_Debug=dissertacao.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/dissertacao.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=aplicacao
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/aplicacao
+CND_ARTIFACT_NAME_Release=dissertacao
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/dissertacao
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=aplicacao.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/aplicacao.tar
+CND_PACKAGE_NAME_Release=dissertacao.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/dissertacao.tar
 #
 # include compiler specific variables
 #
