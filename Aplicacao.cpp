@@ -17,13 +17,19 @@
 #include <opencv/highgui.h>
 #include <signal.h>
 #include <unistd.h>
+#include "ImgSequencial.h"
 
 
 
 Aplicacao::Aplicacao() {
     
     meuKinect=&freenect.createDevice<MeuKinect>(0);
+#ifdef EPIPHANY
     img=new ImgParalela();
+#else
+    img=new ImgSequencial();
+#endif
+    
     meuKinect->inicia();
 #ifdef MOSTRAR_VIDEO
    cv::namedWindow("rgb",CV_WINDOW_AUTOSIZE);cv::namedWindow("bin",CV_WINDOW_AUTOSIZE);
@@ -57,9 +63,9 @@ void Aplicacao::corre() {
         img->setRGB(auxRGB);
         img->setProf(auxProf);
         
-        //temporizador.marcarInicio("Binarizar");
+        temporizador.marcarInicio("Binarizar");
         img->binariza();
-      //  tempos.setTempo("Binarizar",temporizador.marcarFim("Binarizar"));
+        tempos.setTempo("Binarizar",temporizador.marcarFim("Binarizar"));
         
       //  temporizador.marcarInicio("Morf.Matematica");
        // img->filtrarRuido();         
@@ -68,23 +74,23 @@ void Aplicacao::corre() {
          */
      //   tempos.setTempo("Morf.Matematica",temporizador.marcarFim("Morf.Matematica"));
         
-       // temporizador.marcarInicio("Momento");
+        temporizador.marcarInicio("Momento");
         if(!(bolaEncontrada=img->getCentro(&posBolaX,&posBolaY))){
             qtdBolaNaoEncontrada++;
             profBola=0;
         }else
             profBola=img->getProf(posBolaX,posBolaY);
         
-       // tempos.setTempo("Momento",temporizador.marcarFim("Momento"));
+        tempos.setTempo("Momento",temporizador.marcarFim("Momento"));
         qtdTotal++;
         
         
         
 #ifdef MOSTRAR_VIDEO
-     //   temporizador.marcarInicio("Video");
+        temporizador.marcarInicio("Video");
         mostrarImagens((char*)"rgb",(char*)"bin");
         cv::waitKey(1);
- //       tempos.setTempo("Video",temporizador.marcarFim("Video"));
+        tempos.setTempo("Video",temporizador.marcarFim("Video"));
 #endif
       //  tempos.setTempo("Loop",temporizador.marcarFim("Loop"));
         if(++cont>500)kill(getpid(),SIGINT);
