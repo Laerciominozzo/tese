@@ -1,0 +1,573 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+ 63.72      2.79     2.79    16614   168.00   204.73  ImgSequencial::adicionaCorBola(unsigned char, unsigned char, unsigned char)
+ 11.19      3.28     0.49      501   978.43   978.43  ImgSequencial::getCentro(int*, int*)
+  7.08      3.59     0.31 135606562     0.00     0.00  Cor::~Cor()
+  4.57      3.79     0.20 43088692     0.00     0.00  Cor::Cor(unsigned char, unsigned char, unsigned char)
+  2.74      3.91     0.12      502   239.14   239.14  MeuKinect::getRGB(cv::Mat&)
+  2.51      4.02     0.11      501   219.65   219.65  cv::MatExpr::~MatExpr()
+  2.51      4.13     0.11                             MeuKinect::DepthCallback(void*, unsigned int)
+  2.28      4.23     0.10     4094    24.44    24.44  Cor::setR(unsigned char)
+  2.06      4.32     0.09      501   179.71   179.71  MeuKinect::getProf(cv::Mat&)
+  1.37      4.38     0.06                             MeuKinect::VideoCallback(void*, unsigned int)
+  0.00      4.38     0.00    16614     0.00     0.00  Img::adicionaCorBola(void*, unsigned char, unsigned char, unsigned char)
+  0.00      4.38     0.00    11928     0.00     0.00  cv::Mat::release()
+  0.00      4.38     0.00     5214     0.00     0.00  cv::Mat::~Mat()
+  0.00      4.38     0.00     4094     0.00     0.00  Cor::setB(unsigned char)
+  0.00      4.38     0.00     4094     0.00     0.00  Cor::setG(unsigned char)
+  0.00      4.38     0.00     2057     0.00     0.00  std::unique_lock<std::mutex>::~unique_lock()
+  0.00      4.38     0.00     1004     0.00     0.00  std::mutex::lock()
+  0.00      4.38     0.00     1003     0.00     0.00  cv::Mat::Mat(cv::Mat const&)
+  0.00      4.38     0.00     1002     0.00     0.00  cv::Mat::operator=(cv::Mat const&)
+  0.00      4.38     0.00      501     0.00     0.00  ImgSequencial::filtrarRuido()
+  0.00      4.38     0.00      501     0.00     0.00  ImgSequencial::setRGB(cv::Mat)
+  0.00      4.38     0.00      501     0.00     0.00  ImgSequencial::getProf(int, int)
+  0.00      4.38     0.00      501     0.00     0.00  ImgSequencial::setProf(cv::Mat)
+  0.00      4.38     0.00      501     0.00   219.65  ImgSequencial::binariza()
+  0.00      4.38     0.00      201     0.00     0.00  cv::Mat::Mat()
+  0.00      4.38     0.00      103     0.00     0.00  Mutex::~Mutex()
+  0.00      4.38     0.00        5     0.00     0.00  cv::Mat::Mat(int, int, int)
+  0.00      4.38     0.00        4     0.00     0.00  std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >*)
+  0.00      4.38     0.00        4     0.00     0.00  std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > >*)
+  0.00      4.38     0.00        4     0.00     0.00  std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >*)
+  0.00      4.38     0.00        2     0.00     0.00  Temporizador::marcarInicio(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00      4.38     0.00        2     0.00     0.00  Temporizador::Temporizador()
+  0.00      4.38     0.00        2     0.00     0.00  Temporizador::~Temporizador()
+  0.00      4.38     0.00        2     0.00     0.00  ImgSequencial::getQtdAmostras()
+  0.00      4.38     0.00        2     0.00     0.00  Tempos::Tempos()
+  0.00      4.38     0.00        2     0.00     0.00  Tempos::~Tempos()
+  0.00      4.38     0.00        2     0.00     0.00  Freenect::FreenectDevice::setDepthFormat(freenect_depth_format, freenect_resolution)
+  0.00      4.38     0.00        2     0.00     0.00  Freenect::FreenectDevice::setVideoFormat(freenect_video_format, freenect_resolution)
+  0.00      4.38     0.00        2     0.00     0.00  std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, timeval, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      4.38     0.00        2     0.00     0.00  std::_Rb_tree_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>&&, std::tuple<>&&)
+  0.00      4.38     0.00        2     0.00     0.00  std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_get_insert_unique_pos(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      4.38     0.00        2     0.00     0.00  std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      4.38     0.00        2     0.00     0.00  std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::find(int const&)
+  0.00      4.38     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN13ImgSequencialC2Ev
+  0.00      4.38     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN16JanelaCalibracaoC2EPvPFvS0_hhhE
+  0.00      4.38     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN3Img15adicionaCorBolaEPvhhh
+  0.00      4.38     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN9AplicacaoC2Ev
+  0.00      4.38     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN9MeuKinectC2EP17_freenect_contexti
+  0.00      4.38     0.00        1     0.00     0.00  _GLOBAL__sub_I_continua
+  0.00      4.38     0.00        1     0.00     0.01  ImgSequencial::ImgSequencial()
+  0.00      4.38     0.00        1     0.00     0.00  JanelaCalibracao::mostrar(cv::Mat)
+  0.00      4.38     0.00        1     0.00     0.00  JanelaCalibracao::JanelaCalibracao(void*, void (*)(void*, unsigned char, unsigned char, unsigned char))
+  0.00      4.38     0.00        1     0.00     0.00  JanelaCalibracao::~JanelaCalibracao()
+  0.00      4.38     0.00        1     0.00     0.00  Tempos::verDados[abi:cxx11]()
+  0.00      4.38     0.00        1     0.00     0.00  Freenect::FreenectDevice::~FreenectDevice()
+  0.00      4.38     0.00        1     0.00     0.00  MeuKinect& Freenect::Freenect::createDevice<MeuKinect>(int)
+  0.00      4.38     0.00        1     0.00     0.00  Freenect::Freenect::deleteDevice(int)
+  0.00      4.38     0.00        1     0.00     0.00  Freenect::Freenect::Freenect()
+  0.00      4.38     0.00        1     0.00     0.00  Freenect::Freenect::operator()()
+  0.00      4.38     0.00        1     0.00     0.00  MeuKinect::inicia()
+  0.00      4.38     0.00        1     0.00     0.00  MeuKinect::finaliza()
+  0.00      4.38     0.00        1     0.00     0.00  MeuKinect::MeuKinect(_freenect_context*, int)
+  0.00      4.38     0.00        1     0.00     0.00  MeuKinect::~MeuKinect()
+  0.00      4.38     0.00        1     0.00     0.00  MeuKinect::~MeuKinect()
+  0.00      4.38     0.00        1     0.00     0.00  std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::_M_get_insert_unique_pos(int const&)
+  0.00      4.38     0.00        1     0.00     0.00  std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<int const, Freenect::FreenectDevice*> >, int const&)
+  0.00      4.38     0.00        1     0.00     0.00  void std::lock<std::mutex, std::mutex>(std::mutex&, std::mutex&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.23% of 4.38 seconds
+
+index % time    self  children    called     name
+                2.79    0.61   16614/16614       JanelaCalibracao::mouseCallBack(int, int, int, int, void*) [2]
+[1]     77.6    2.79    0.61   16614         ImgSequencial::adicionaCorBola(unsigned char, unsigned char, unsigned char) [1]
+                0.31    0.00 135606552/135606562     Cor::~Cor() [5]
+                0.20    0.00 43088690/43088692     Cor::Cor(unsigned char, unsigned char, unsigned char) [6]
+                0.10    0.00    4094/4094        Cor::setR(unsigned char) [11]
+                0.00    0.00    4094/4094        Cor::setB(unsigned char) [28]
+                0.00    0.00    4094/4094        Cor::setG(unsigned char) [29]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     77.6    0.00    3.40                 JanelaCalibracao::mouseCallBack(int, int, int, int, void*) [2]
+                2.79    0.61   16614/16614       ImgSequencial::adicionaCorBola(unsigned char, unsigned char, unsigned char) [1]
+                0.00    0.00   16614/16614       Img::adicionaCorBola(void*, unsigned char, unsigned char, unsigned char) [25]
+                0.00    0.00     196/201         cv::Mat::Mat() [38]
+                0.00    0.00     196/5214        cv::Mat::~Mat() [27]
+                0.00    0.00      99/103         Mutex::~Mutex() [39]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]     18.5    0.00    0.81                 Aplicacao::corre() [3]
+                0.49    0.00     501/501         ImgSequencial::getCentro(int*, int*) [4]
+                0.12    0.00     501/502         MeuKinect::getRGB(cv::Mat&) [7]
+                0.00    0.11     501/501         ImgSequencial::binariza() [8]
+                0.09    0.00     501/501         MeuKinect::getProf(cv::Mat&) [12]
+                0.00    0.00    1004/5214        cv::Mat::~Mat() [27]
+                0.00    0.00    1002/1003        cv::Mat::Mat(cv::Mat const&) [32]
+                0.00    0.00    1002/1002        cv::Mat::operator=(cv::Mat const&) [33]
+                0.00    0.00     501/501         ImgSequencial::setRGB(cv::Mat) [35]
+                0.00    0.00     501/501         ImgSequencial::setProf(cv::Mat) [37]
+                0.00    0.00     501/501         ImgSequencial::filtrarRuido() [34]
+                0.00    0.00     501/501         ImgSequencial::getProf(int, int) [36]
+                0.00    0.00       2/5           cv::Mat::Mat(int, int, int) [40]
+-----------------------------------------------
+                0.49    0.00     501/501         Aplicacao::corre() [3]
+[4]     11.2    0.49    0.00     501         ImgSequencial::getCentro(int*, int*) [4]
+-----------------------------------------------
+                0.00    0.00      10/135606562     Aplicacao::verDados[abi:cxx11]() [15]
+                0.31    0.00 135606552/135606562     ImgSequencial::adicionaCorBola(unsigned char, unsigned char, unsigned char) [1]
+[5]      7.1    0.31    0.00 135606562         Cor::~Cor() [5]
+-----------------------------------------------
+                0.00    0.00       2/43088692     ImgSequencial::ImgSequencial() [16]
+                0.20    0.00 43088690/43088692     ImgSequencial::adicionaCorBola(unsigned char, unsigned char, unsigned char) [1]
+[6]      4.6    0.20    0.00 43088692         Cor::Cor(unsigned char, unsigned char, unsigned char) [6]
+-----------------------------------------------
+                0.00    0.00       1/502         Aplicacao::getCoresBola() [14]
+                0.12    0.00     501/502         Aplicacao::corre() [3]
+[7]      2.7    0.12    0.00     502         MeuKinect::getRGB(cv::Mat&) [7]
+                0.00    0.00     502/1004        std::mutex::lock() [31]
+                0.00    0.00     502/2057        std::unique_lock<std::mutex>::~unique_lock() [30]
+-----------------------------------------------
+                0.00    0.11     501/501         Aplicacao::corre() [3]
+[8]      2.5    0.00    0.11     501         ImgSequencial::binariza() [8]
+                0.11    0.00     501/501         cv::MatExpr::~MatExpr() [9]
+                0.00    0.00     501/5214        cv::Mat::~Mat() [27]
+-----------------------------------------------
+                0.11    0.00     501/501         ImgSequencial::binariza() [8]
+[9]      2.5    0.11    0.00     501         cv::MatExpr::~MatExpr() [9]
+                0.00    0.00    2004/5214        cv::Mat::~Mat() [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     2.5    0.11    0.00                 MeuKinect::DepthCallback(void*, unsigned int) [10]
+                0.00    0.00     565/2057        std::unique_lock<std::mutex>::~unique_lock() [30]
+-----------------------------------------------
+                0.10    0.00    4094/4094        ImgSequencial::adicionaCorBola(unsigned char, unsigned char, unsigned char) [1]
+[11]     2.3    0.10    0.00    4094         Cor::setR(unsigned char) [11]
+-----------------------------------------------
+                0.09    0.00     501/501         Aplicacao::corre() [3]
+[12]     2.1    0.09    0.00     501         MeuKinect::getProf(cv::Mat&) [12]
+                0.00    0.00     501/1004        std::mutex::lock() [31]
+                0.00    0.00     501/2057        std::unique_lock<std::mutex>::~unique_lock() [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     1.4    0.06    0.00                 MeuKinect::VideoCallback(void*, unsigned int) [13]
+                0.00    0.00     488/2057        std::unique_lock<std::mutex>::~unique_lock() [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[14]     0.0    0.00    0.00                 Aplicacao::getCoresBola() [14]
+                0.00    0.00       1/502         MeuKinect::getRGB(cv::Mat&) [7]
+                0.00    0.00       2/2           ImgSequencial::getQtdAmostras() [47]
+                0.00    0.00       2/5214        cv::Mat::~Mat() [27]
+                0.00    0.00       1/5           cv::Mat::Mat(int, int, int) [40]
+                0.00    0.00       1/1           JanelaCalibracao::JanelaCalibracao(void*, void (*)(void*, unsigned char, unsigned char, unsigned char)) [64]
+                0.00    0.00       1/1003        cv::Mat::Mat(cv::Mat const&) [32]
+                0.00    0.00       1/1           JanelaCalibracao::mostrar(cv::Mat) [63]
+                0.00    0.00       1/1           JanelaCalibracao::~JanelaCalibracao() [65]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     0.0    0.00    0.00                 Aplicacao::verDados[abi:cxx11]() [15]
+                0.00    0.00      10/135606562     Cor::~Cor() [5]
+                0.00    0.00       1/1           Tempos::verDados[abi:cxx11]() [66]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::Aplicacao() [17]
+[16]     0.0    0.00    0.00       1         ImgSequencial::ImgSequencial() [16]
+                0.00    0.00       2/43088692     Cor::Cor(unsigned char, unsigned char, unsigned char) [6]
+                0.00    0.00       3/201         cv::Mat::Mat() [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[17]     0.0    0.00    0.00                 Aplicacao::Aplicacao() [17]
+                0.00    0.00       1/1           ImgSequencial::ImgSequencial() [16]
+                0.00    0.00       1/2           Temporizador::Temporizador() [45]
+                0.00    0.00       1/1           Freenect::Freenect::Freenect() [70]
+                0.00    0.00       1/2           Tempos::Tempos() [48]
+                0.00    0.00       1/1           MeuKinect& Freenect::Freenect::createDevice<MeuKinect>(int) [68]
+                0.00    0.00       1/1           MeuKinect::inicia() [72]
+-----------------------------------------------
+                0.00    0.00   16614/16614       JanelaCalibracao::mouseCallBack(int, int, int, int, void*) [2]
+[25]     0.0    0.00    0.00   16614         Img::adicionaCorBola(void*, unsigned char, unsigned char, unsigned char) [25]
+-----------------------------------------------
+                0.00    0.00       1/11928       JanelaCalibracao::mostrar(cv::Mat) [63]
+                0.00    0.00       1/11928       JanelaCalibracao::~JanelaCalibracao() [65]
+                0.00    0.00       2/11928       MeuKinect::~MeuKinect() [76]
+                0.00    0.00    4706/11928       cv::Mat::operator=(cv::Mat const&) [33]
+                0.00    0.00    7218/11928       cv::Mat::~Mat() [27]
+[26]     0.0    0.00    0.00   11928         cv::Mat::release() [26]
+-----------------------------------------------
+                0.00    0.00       1/5214        JanelaCalibracao::mostrar(cv::Mat) [63]
+                0.00    0.00       1/5214        JanelaCalibracao::~JanelaCalibracao() [65]
+                0.00    0.00       2/5214        MeuKinect::~MeuKinect() [76]
+                0.00    0.00       2/5214        Aplicacao::getCoresBola() [14]
+                0.00    0.00     196/5214        JanelaCalibracao::mouseCallBack(int, int, int, int, void*) [2]
+                0.00    0.00     501/5214        ImgSequencial::binariza() [8]
+                0.00    0.00    1004/5214        Aplicacao::corre() [3]
+                0.00    0.00    1503/5214        ImgSequencial::filtrarRuido() [34]
+                0.00    0.00    2004/5214        cv::MatExpr::~MatExpr() [9]
+[27]     0.0    0.00    0.00    5214         cv::Mat::~Mat() [27]
+                0.00    0.00    7218/11928       cv::Mat::release() [26]
+-----------------------------------------------
+                0.00    0.00    4094/4094        ImgSequencial::adicionaCorBola(unsigned char, unsigned char, unsigned char) [1]
+[28]     0.0    0.00    0.00    4094         Cor::setB(unsigned char) [28]
+-----------------------------------------------
+                0.00    0.00    4094/4094        ImgSequencial::adicionaCorBola(unsigned char, unsigned char, unsigned char) [1]
+[29]     0.0    0.00    0.00    4094         Cor::setG(unsigned char) [29]
+-----------------------------------------------
+                0.00    0.00       1/2057        void std::lock<std::mutex, std::mutex>(std::mutex&, std::mutex&) [79]
+                0.00    0.00     488/2057        MeuKinect::VideoCallback(void*, unsigned int) [13]
+                0.00    0.00     501/2057        MeuKinect::getProf(cv::Mat&) [12]
+                0.00    0.00     502/2057        MeuKinect::getRGB(cv::Mat&) [7]
+                0.00    0.00     565/2057        MeuKinect::DepthCallback(void*, unsigned int) [10]
+[30]     0.0    0.00    0.00    2057         std::unique_lock<std::mutex>::~unique_lock() [30]
+-----------------------------------------------
+                0.00    0.00       1/1004        void std::lock<std::mutex, std::mutex>(std::mutex&, std::mutex&) [79]
+                0.00    0.00     501/1004        MeuKinect::getProf(cv::Mat&) [12]
+                0.00    0.00     502/1004        MeuKinect::getRGB(cv::Mat&) [7]
+[31]     0.0    0.00    0.00    1004         std::mutex::lock() [31]
+-----------------------------------------------
+                0.00    0.00       1/1003        Aplicacao::getCoresBola() [14]
+                0.00    0.00    1002/1003        Aplicacao::corre() [3]
+[32]     0.0    0.00    0.00    1003         cv::Mat::Mat(cv::Mat const&) [32]
+-----------------------------------------------
+                0.00    0.00    1002/1002        Aplicacao::corre() [3]
+[33]     0.0    0.00    0.00    1002         cv::Mat::operator=(cv::Mat const&) [33]
+                0.00    0.00    4706/11928       cv::Mat::release() [26]
+-----------------------------------------------
+                0.00    0.00     501/501         Aplicacao::corre() [3]
+[34]     0.0    0.00    0.00     501         ImgSequencial::filtrarRuido() [34]
+                0.00    0.00    1503/5214        cv::Mat::~Mat() [27]
+-----------------------------------------------
+                0.00    0.00     501/501         Aplicacao::corre() [3]
+[35]     0.0    0.00    0.00     501         ImgSequencial::setRGB(cv::Mat) [35]
+-----------------------------------------------
+                0.00    0.00     501/501         Aplicacao::corre() [3]
+[36]     0.0    0.00    0.00     501         ImgSequencial::getProf(int, int) [36]
+-----------------------------------------------
+                0.00    0.00     501/501         Aplicacao::corre() [3]
+[37]     0.0    0.00    0.00     501         ImgSequencial::setProf(cv::Mat) [37]
+-----------------------------------------------
+                0.00    0.00       1/201         JanelaCalibracao::JanelaCalibracao(void*, void (*)(void*, unsigned char, unsigned char, unsigned char)) [64]
+                0.00    0.00       1/201         JanelaCalibracao::mostrar(cv::Mat) [63]
+                0.00    0.00       3/201         ImgSequencial::ImgSequencial() [16]
+                0.00    0.00     196/201         JanelaCalibracao::mouseCallBack(int, int, int, int, void*) [2]
+[38]     0.0    0.00    0.00     201         cv::Mat::Mat() [38]
+-----------------------------------------------
+                0.00    0.00       1/103         JanelaCalibracao::mostrar(cv::Mat) [63]
+                0.00    0.00       1/103         JanelaCalibracao::~JanelaCalibracao() [65]
+                0.00    0.00       2/103         JanelaCalibracao::JanelaCalibracao(void*, void (*)(void*, unsigned char, unsigned char, unsigned char)) [64]
+                0.00    0.00      99/103         JanelaCalibracao::mouseCallBack(int, int, int, int, void*) [2]
+[39]     0.0    0.00    0.00     103         Mutex::~Mutex() [39]
+-----------------------------------------------
+                0.00    0.00       1/5           Aplicacao::getCoresBola() [14]
+                0.00    0.00       2/5           MeuKinect::MeuKinect(_freenect_context*, int) [74]
+                0.00    0.00       2/5           Aplicacao::corre() [3]
+[40]     0.0    0.00    0.00       5         cv::Mat::Mat(int, int, int) [40]
+-----------------------------------------------
+                                   2             std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >*) [41]
+                0.00    0.00       1/4           MeuKinect::~MeuKinect() [76]
+                0.00    0.00       1/4           Aplicacao::~Aplicacao() [107]
+                0.00    0.00       2/4           Temporizador::~Temporizador() [46]
+[41]     0.0    0.00    0.00       4+2       std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >*) [41]
+                                   2             std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >*) [41]
+-----------------------------------------------
+                0.00    0.00       4/4           Tempos::~Tempos() [49]
+[42]     0.0    0.00    0.00       4         std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > >*) [42]
+-----------------------------------------------
+                0.00    0.00       1/4           MeuKinect::~MeuKinect() [76]
+                0.00    0.00       1/4           Aplicacao::~Aplicacao() [107]
+                0.00    0.00       2/4           Tempos::~Tempos() [49]
+[43]     0.0    0.00    0.00       4         std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >*) [43]
+-----------------------------------------------
+                0.00    0.00       2/2           Temporizador::Temporizador() [45]
+[44]     0.0    0.00    0.00       2         Temporizador::marcarInicio(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [44]
+                0.00    0.00       2/2           std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, timeval, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [52]
+-----------------------------------------------
+                0.00    0.00       1/2           MeuKinect::MeuKinect(_freenect_context*, int) [74]
+                0.00    0.00       1/2           Aplicacao::Aplicacao() [17]
+[45]     0.0    0.00    0.00       2         Temporizador::Temporizador() [45]
+                0.00    0.00       2/2           Temporizador::marcarInicio(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [44]
+-----------------------------------------------
+                0.00    0.00       1/2           MeuKinect::~MeuKinect() [76]
+                0.00    0.00       1/2           Aplicacao::~Aplicacao() [107]
+[46]     0.0    0.00    0.00       2         Temporizador::~Temporizador() [46]
+                0.00    0.00       2/4           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >*) [41]
+-----------------------------------------------
+                0.00    0.00       2/2           Aplicacao::getCoresBola() [14]
+[47]     0.0    0.00    0.00       2         ImgSequencial::getQtdAmostras() [47]
+-----------------------------------------------
+                0.00    0.00       1/2           MeuKinect::MeuKinect(_freenect_context*, int) [74]
+                0.00    0.00       1/2           Aplicacao::Aplicacao() [17]
+[48]     0.0    0.00    0.00       2         Tempos::Tempos() [48]
+-----------------------------------------------
+                0.00    0.00       1/2           MeuKinect::~MeuKinect() [76]
+                0.00    0.00       1/2           Aplicacao::~Aplicacao() [107]
+[49]     0.0    0.00    0.00       2         Tempos::~Tempos() [49]
+                0.00    0.00       4/4           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > >*) [42]
+                0.00    0.00       2/4           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >*) [43]
+-----------------------------------------------
+                0.00    0.00       2/2           MeuKinect::MeuKinect(_freenect_context*, int) [74]
+[50]     0.0    0.00    0.00       2         Freenect::FreenectDevice::setDepthFormat(freenect_depth_format, freenect_resolution) [50]
+-----------------------------------------------
+                0.00    0.00       2/2           MeuKinect::MeuKinect(_freenect_context*, int) [74]
+[51]     0.0    0.00    0.00       2         Freenect::FreenectDevice::setVideoFormat(freenect_video_format, freenect_resolution) [51]
+-----------------------------------------------
+                0.00    0.00       2/2           Temporizador::marcarInicio(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [44]
+[52]     0.0    0.00    0.00       2         std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, timeval, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [52]
+                0.00    0.00       2/2           std::_Rb_tree_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>&&, std::tuple<>&&) [53]
+-----------------------------------------------
+                0.00    0.00       2/2           std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, timeval, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [52]
+[53]     0.0    0.00    0.00       2         std::_Rb_tree_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>&&, std::tuple<>&&) [53]
+                0.00    0.00       2/2           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [55]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [55]
+[54]     0.0    0.00    0.00       2         std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_get_insert_unique_pos(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [54]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Rb_tree_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>&&, std::tuple<>&&) [53]
+[55]     0.0    0.00    0.00       2         std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [55]
+                0.00    0.00       2/2           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_get_insert_unique_pos(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [54]
+-----------------------------------------------
+                0.00    0.00       1/2           Freenect::Freenect::deleteDevice(int) [69]
+                0.00    0.00       1/2           MeuKinect& Freenect::Freenect::createDevice<MeuKinect>(int) [68]
+[56]     0.0    0.00    0.00       2         std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::find(int const&) [56]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [130]
+[57]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN13ImgSequencialC2Ev [57]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [130]
+[58]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN16JanelaCalibracaoC2EPvPFvS0_hhhE [58]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [130]
+[59]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN3Img15adicionaCorBolaEPvhhh [59]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [130]
+[60]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN9AplicacaoC2Ev [60]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [130]
+[61]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN9MeuKinectC2EP17_freenect_contexti [61]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [130]
+[62]     0.0    0.00    0.00       1         _GLOBAL__sub_I_continua [62]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::getCoresBola() [14]
+[63]     0.0    0.00    0.00       1         JanelaCalibracao::mostrar(cv::Mat) [63]
+                0.00    0.00       1/201         cv::Mat::Mat() [38]
+                0.00    0.00       1/11928       cv::Mat::release() [26]
+                0.00    0.00       1/5214        cv::Mat::~Mat() [27]
+                0.00    0.00       1/103         Mutex::~Mutex() [39]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::getCoresBola() [14]
+[64]     0.0    0.00    0.00       1         JanelaCalibracao::JanelaCalibracao(void*, void (*)(void*, unsigned char, unsigned char, unsigned char)) [64]
+                0.00    0.00       2/103         Mutex::~Mutex() [39]
+                0.00    0.00       1/201         cv::Mat::Mat() [38]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::getCoresBola() [14]
+[65]     0.0    0.00    0.00       1         JanelaCalibracao::~JanelaCalibracao() [65]
+                0.00    0.00       1/103         Mutex::~Mutex() [39]
+                0.00    0.00       1/5214        cv::Mat::~Mat() [27]
+                0.00    0.00       1/11928       cv::Mat::release() [26]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::verDados[abi:cxx11]() [15]
+[66]     0.0    0.00    0.00       1         Tempos::verDados[abi:cxx11]() [66]
+-----------------------------------------------
+                0.00    0.00       1/1           MeuKinect::~MeuKinect() [75]
+[67]     0.0    0.00    0.00       1         Freenect::FreenectDevice::~FreenectDevice() [67]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::Aplicacao() [17]
+[68]     0.0    0.00    0.00       1         MeuKinect& Freenect::Freenect::createDevice<MeuKinect>(int) [68]
+                0.00    0.00       1/2           std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::find(int const&) [56]
+                0.00    0.00       1/1           MeuKinect::MeuKinect(_freenect_context*, int) [74]
+                0.00    0.00       1/1           std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<int const, Freenect::FreenectDevice*> >, int const&) [78]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::~Aplicacao() [107]
+[69]     0.0    0.00    0.00       1         Freenect::Freenect::deleteDevice(int) [69]
+                0.00    0.00       1/2           std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::find(int const&) [56]
+                0.00    0.00       1/1           MeuKinect::~MeuKinect() [75]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::Aplicacao() [17]
+[70]     0.0    0.00    0.00       1         Freenect::Freenect::Freenect() [70]
+-----------------------------------------------
+                0.00    0.00       1/1           Freenect::Freenect::pthread_callback(void*) [103]
+[71]     0.0    0.00    0.00       1         Freenect::Freenect::operator()() [71]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::Aplicacao() [17]
+[72]     0.0    0.00    0.00       1         MeuKinect::inicia() [72]
+-----------------------------------------------
+                0.00    0.00       1/1           Aplicacao::~Aplicacao() [107]
+[73]     0.0    0.00    0.00       1         MeuKinect::finaliza() [73]
+-----------------------------------------------
+                0.00    0.00       1/1           MeuKinect& Freenect::Freenect::createDevice<MeuKinect>(int) [68]
+[74]     0.0    0.00    0.00       1         MeuKinect::MeuKinect(_freenect_context*, int) [74]
+                0.00    0.00       2/2           Freenect::FreenectDevice::setVideoFormat(freenect_video_format, freenect_resolution) [51]
+                0.00    0.00       2/2           Freenect::FreenectDevice::setDepthFormat(freenect_depth_format, freenect_resolution) [50]
+                0.00    0.00       2/5           cv::Mat::Mat(int, int, int) [40]
+                0.00    0.00       1/2           Temporizador::Temporizador() [45]
+                0.00    0.00       1/2           Tempos::Tempos() [48]
+-----------------------------------------------
+                0.00    0.00       1/1           Freenect::Freenect::deleteDevice(int) [69]
+[75]     0.0    0.00    0.00       1         MeuKinect::~MeuKinect() [75]
+                0.00    0.00       1/1           Freenect::FreenectDevice::~FreenectDevice() [67]
+                0.00    0.00       1/1           MeuKinect::~MeuKinect() [76]
+-----------------------------------------------
+                0.00    0.00       1/1           MeuKinect::~MeuKinect() [75]
+[76]     0.0    0.00    0.00       1         MeuKinect::~MeuKinect() [76]
+                0.00    0.00       2/11928       cv::Mat::release() [26]
+                0.00    0.00       2/5214        cv::Mat::~Mat() [27]
+                0.00    0.00       1/4           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >*) [43]
+                0.00    0.00       1/2           Tempos::~Tempos() [49]
+                0.00    0.00       1/4           std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >*) [41]
+                0.00    0.00       1/2           Temporizador::~Temporizador() [46]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<int const, Freenect::FreenectDevice*> >, int const&) [78]
+[77]     0.0    0.00    0.00       1         std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::_M_get_insert_unique_pos(int const&) [77]
+-----------------------------------------------
+                0.00    0.00       1/1           MeuKinect& Freenect::Freenect::createDevice<MeuKinect>(int) [68]
+[78]     0.0    0.00    0.00       1         std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<int const, Freenect::FreenectDevice*> >, int const&) [78]
+                0.00    0.00       1/1           std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::_M_get_insert_unique_pos(int const&) [77]
+-----------------------------------------------
+                0.00    0.00       1/1           MeuKinect::zerarDados() [108]
+[79]     0.0    0.00    0.00       1         void std::lock<std::mutex, std::mutex>(std::mutex&, std::mutex&) [79]
+                0.00    0.00       1/1004        std::mutex::lock() [31]
+                0.00    0.00       1/2057        std::unique_lock<std::mutex>::~unique_lock() [30]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [57] _GLOBAL__sub_I__ZN13ImgSequencialC2Ev [40] cv::Mat::Mat(int, int, int) [13] MeuKinect::VideoCallback(void*, unsigned int)
+  [58] _GLOBAL__sub_I__ZN16JanelaCalibracaoC2EPvPFvS0_hhhE [38] cv::Mat::Mat() [7] MeuKinect::getRGB(cv::Mat&)
+  [59] _GLOBAL__sub_I__ZN3Img15adicionaCorBolaEPvhhh [27] cv::Mat::~Mat() [72] MeuKinect::inicia()
+  [60] _GLOBAL__sub_I__ZN9AplicacaoC2Ev [33] cv::Mat::operator=(cv::Mat const&) [12] MeuKinect::getProf(cv::Mat&)
+  [61] _GLOBAL__sub_I__ZN9MeuKinectC2EP17_freenect_contexti [9] cv::MatExpr::~MatExpr() [73] MeuKinect::finaliza()
+  [62] _GLOBAL__sub_I_continua [28] Cor::setB(unsigned char) [74] MeuKinect::MeuKinect(_freenect_context*, int)
+  [44] Temporizador::marcarInicio(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [29] Cor::setG(unsigned char) [75] MeuKinect::~MeuKinect()
+  [45] Temporizador::Temporizador() [11] Cor::setR(unsigned char) [76] MeuKinect::~MeuKinect()
+  [46] Temporizador::~Temporizador() [6] Cor::Cor(unsigned char, unsigned char, unsigned char) [30] std::unique_lock<std::mutex>::~unique_lock()
+  [34] ImgSequencial::filtrarRuido() [5] Cor::~Cor()      [52] std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, timeval, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [47] ImgSequencial::getQtdAmostras() [25] Img::adicionaCorBola(void*, unsigned char, unsigned char, unsigned char) [31] std::mutex::lock()
+   [1] ImgSequencial::adicionaCorBola(unsigned char, unsigned char, unsigned char) [39] Mutex::~Mutex() [53] std::_Rb_tree_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::piecewise_construct_t const&, std::tuple<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>&&, std::tuple<>&&)
+  [35] ImgSequencial::setRGB(cv::Mat) [66] Tempos::verDados[abi:cxx11]() [54] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_get_insert_unique_pos(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [36] ImgSequencial::getProf(int, int) [48] Tempos::Tempos() [55] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [37] ImgSequencial::setProf(cv::Mat) [49] Tempos::~Tempos() [41] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, timeval> >*)
+   [8] ImgSequencial::binariza() [50] Freenect::FreenectDevice::setDepthFormat(freenect_depth_format, freenect_resolution) [42] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<double, std::allocator<double> > > >*)
+   [4] ImgSequencial::getCentro(int*, int*) [51] Freenect::FreenectDevice::setVideoFormat(freenect_video_format, freenect_resolution) [43] std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >*)
+  [16] ImgSequencial::ImgSequencial() [67] Freenect::FreenectDevice::~FreenectDevice() [77] std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::_M_get_insert_unique_pos(int const&)
+  [63] JanelaCalibracao::mostrar(cv::Mat) [68] MeuKinect& Freenect::Freenect::createDevice<MeuKinect>(int) [78] std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<int const, Freenect::FreenectDevice*> >, int const&)
+  [64] JanelaCalibracao::JanelaCalibracao(void*, void (*)(void*, unsigned char, unsigned char, unsigned char)) [69] Freenect::Freenect::deleteDevice(int) [56] std::_Rb_tree<int, std::pair<int const, Freenect::FreenectDevice*>, std::_Select1st<std::pair<int const, Freenect::FreenectDevice*> >, std::less<int>, std::allocator<std::pair<int const, Freenect::FreenectDevice*> > >::find(int const&)
+  [65] JanelaCalibracao::~JanelaCalibracao() [70] Freenect::Freenect::Freenect() [79] void std::lock<std::mutex, std::mutex>(std::mutex&, std::mutex&)
+  [26] cv::Mat::release()     [71] Freenect::Freenect::operator()()
+  [32] cv::Mat::Mat(cv::Mat const&) [10] MeuKinect::DepthCallback(void*, unsigned int)

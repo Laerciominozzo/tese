@@ -1,0 +1,114 @@
+Processo (PID): 25181
+Retirando amostras de cores. Precione 'n' ou 'N' para nova recolha ou qualquer tecla para finalizar.
+Quantidade de cores recolhidas:0
+Quantidade de cores recolhidas:2047
+Usando a Mascara: 0xfc
+Usando o espaço de cores HSV.
+Processo (PID): 25181
+Dados zerados
+
+
+Parando a aplicação!
+Sistema 		Usuario 		Total 
+0.010000s	|	0.260000s	|	0.270000s
+0.000000s	|	0.300000s	|	0.300000s
+0.000000s	|	0.410000s	|	0.410000s
+0.010000s	|	0.360000s	|	0.370000s
+0.000000s	|	0.310000s	|	0.310000s
+0.000000s	|	0.420000s	|	0.420000s
+0.000000s	|	0.350000s	|	0.350000s
+0.010000s	|	0.280000s	|	0.290000s
+0.000000s	|	0.430000s	|	0.430000s
+0.010000s	|	0.420000s	|	0.430000s
+0.000000s	|	0.410000s	|	0.410000s
+0.000000s	|	0.400000s	|	0.400000s
+0.000000s	|	0.330000s	|	0.330000s
+0.000000s	|	0.410000s	|	0.410000s
+0.010000s	|	0.330000s	|	0.340000s
+0.000000s	|	0.350000s	|	0.350000s
+0.010000s	|	0.310000s	|	0.320000s
+0.000000s	|	0.330000s	|	0.330000s
+0.000000s	|	0.260000s	|	0.260000s
+0.000000s	|	0.320000s	|	0.320000s
+0.010000s	|	0.310000s	|	0.320000s
+0.010000s	|	0.360000s	|	0.370000s
+0.010000s	|	0.320000s	|	0.330000s
+0.000000s	|	0.320000s	|	0.320000s
+0.000000s	|	0.320000s	|	0.320000s
+0.000000s	|	0.310000s	|	0.310000s
+0.000000s	|	0.320000s	|	0.320000s
+0.000000s	|	0.280000s	|	0.280000s
+0.010000s	|	0.300000s	|	0.310000s
+0.000000s	|	0.350000s	|	0.350000s
+
+
+  Quantidade de imagens tiradas:.........................................104
+
+  Quantidade de imagens RGB perdidas:....................................418
+  Quenatidade de Imagens de profundidade perdidas:.......................433
+  Quantidade de vezes que o kinect não tinha a imagem RGB:...............0
+  Quantidade de vezes que o kinect não tinha a imagem de profundidade:...0
+
+  Quantidade de vezes em que a bola não foi encontrada:..................0
+
+  Posicao X:.............................................................193
+  Posicao Y:.............................................................186
+
+  Distancia da câmera:...............................................645
+Processo (PID): 25224
+Retirando amostras de cores. Precione 'n' ou 'N' para nova recolha ou qualquer tecla para finalizar.
+Quantidade de cores recolhidas:0
+Quantidade de cores recolhidas:2047
+Usando a Mascara: 0xfc
+Usando o espaço de cores HSV.
+Processo (PID): 25224
+Dados zerados
+
+
+Parando a aplicação!
+Sistema 		Usuario 		Total 
+0.030000s	|	0.280000s	|	0.310000s
+0.010000s	|	0.330000s	|	0.340000s
+0.020000s	|	0.370000s	|	0.390000s
+0.020000s	|	0.380000s	|	0.400000s
+0.020000s	|	0.390000s	|	0.410000s
+0.030000s	|	0.260000s	|	0.290000s
+0.010000s	|	0.280000s	|	0.290000s
+0.030000s	|	0.390000s	|	0.420000s
+0.010000s	|	0.290000s	|	0.300000s
+0.030000s	|	0.330000s	|	0.360000s
+0.020000s	|	0.300000s	|	0.320000s
+0.020000s	|	0.360000s	|	0.380000s
+0.080000s	|	0.350000s	|	0.430000s
+0.020000s	|	0.300000s	|	0.320000s
+0.030000s	|	0.320000s	|	0.350000s
+0.020000s	|	0.310000s	|	0.330000s
+0.010000s	|	0.350000s	|	0.360000s
+0.010000s	|	0.300000s	|	0.310000s
+0.020000s	|	0.310000s	|	0.330000s
+0.160000s	|	0.140000s	|	0.300000s
+0.160000s	|	0.150000s	|	0.310000s
+0.190000s	|	0.140000s	|	0.330000s
+0.220000s	|	0.200000s	|	0.420000s
+0.110000s	|	0.220000s	|	0.330000s
+0.010000s	|	0.300000s	|	0.310000s
+0.010000s	|	0.330000s	|	0.340000s
+0.000000s	|	0.310000s	|	0.310000s
+0.100000s	|	0.280000s	|	0.380000s
+0.050000s	|	0.280000s	|	0.330000s
+0.060000s	|	0.290000s	|	0.350000s
+
+
+  Quantidade de imagens tiradas:.........................................117
+
+  Quantidade de imagens RGB perdidas:....................................474
+  Quenatidade de Imagens de profundidade perdidas:.......................486
+  Quantidade de vezes que o kinect não tinha a imagem RGB:...............0
+  Quantidade de vezes que o kinect não tinha a imagem de profundidade:...0
+
+  Quantidade de vezes em que a bola não foi encontrada:..................0
+
+  Posicao X:.............................................................214
+  Posicao Y:.............................................................151
+
+  Distancia da câmera:...............................................631
